@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HapwBanner - Shop Acc & Xu Sky</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] },
+                    colors: {
+                        primary: '#6366f1',
+                        dark: '#020617',
+                        gold: '#ffb800',
+                        danger: '#ef4444',
+                        sky: '#0ea5e9'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { background-color: #020617; color: #e2e8f0; }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #818cf8 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sky-gradient {
+            background: linear-gradient(135deg, #0ea5e9 0%, #6366f1 100%);
+        }
+        .product-img-container {
+            position: relative;
+            overflow: hidden;
+            background: #111;
+            border-radius: 2rem 2rem 0 0;
+        }
+        .product-img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        .item-card:hover .product-img {
+            transform: scale(1.03);
+        }
+        .note-item {
+            background: rgba(255, 255, 255, 0.03);
+            border-left: 4px solid #6366f1;
+        }
+    </style>
+</head>
+<body class="font-sans antialiased min-h-screen flex flex-col items-center">
+
+    <!-- Header Section -->
+    <header class="py-10 px-6 text-center w-full">
+        <div class="w-24 h-24 mx-auto mb-4 rounded-full overflow-hidden border-2 border-white/10 shadow-2xl">
+            <img src="https://zpi.cx/b/6hGRqtR4rn.jpg-webp" alt="Logo HapwBanner" class="w-full h-full object-cover">
+        </div>
+        <h1 class="text-4xl font-extrabold tracking-tighter text-white italic">Hapw<span class="text-gradient">Banner</span></h1>
+        <p class="text-gray-400 text-xs font-semibold tracking-wide mt-2">Dịch vụ mua bán tài khoản & Xu uy tín</p>
+    </header>
+
+    <main class="max-w-4xl w-full px-4 pb-16">
+        
+        <!-- Thông báo hệ thống -->
+        <div class="mb-8 p-4 bg-primary/10 border border-primary/20 rounded-2xl flex items-center gap-4">
+            <div class="w-10 h-10 flex-shrink-0 rounded-full bg-primary/20 flex items-center justify-center text-primary animate-pulse">
+                <i class="fas fa-info-circle"></i>
+            </div>
+            <p class="text-sm font-medium text-gray-300">Vui lòng bấm mua và nhắn tin qua Facebook. Shop không thanh toán trực tiếp tại đây.</p>
+        </div>
+
+        <!-- ================= MỤC 1: BÁN XU SKY ================= -->
+        <div class="glass-card item-card rounded-[2.5rem] overflow-hidden border border-sky/30 shadow-2xl mb-12 relative">
+            <div class="absolute top-0 right-0 sky-gradient px-6 py-2 rounded-bl-3xl z-10 shadow-lg">
+                <span class="text-[10px] font-bold text-white tracking-widest uppercase">Dịch vụ nổi bật</span>
+            </div>
+            
+            <div class="p-8 md:p-10">
+                <div class="flex items-center gap-5 mb-8">
+                    <div class="w-16 h-16 rounded-2xl sky-gradient flex items-center justify-center text-white shadow-xl">
+                        <i class="fas fa-coins text-3xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-white tracking-tight italic">Bán Xu Sky Blockman Go</h2>
+                        <p class="text-sky text-sm font-medium italic">Nạp xu cực nhanh, an toàn tuyệt đối</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                    <div class="bg-white/5 border border-white/10 p-6 rounded-3xl flex flex-col items-center text-center">
+                        <div class="text-sky mb-2 text-xl"><i class="fas fa-university"></i></div>
+                        <p class="text-xs text-gray-400 font-bold mb-1 italic">Tỉ lệ qua Bank</p>
+                        <p class="text-3xl font-black text-white tracking-tighter italic">
+                            <i class="fas fa-university text-sky text-xl mr-2"></i>75m / 10k
+                        </p>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-6 rounded-3xl flex flex-col items-center text-center">
+                        <div class="text-gold mb-2 text-xl"><i class="fas fa-credit-card"></i></div>
+                        <p class="text-xs text-gray-400 font-bold mb-1 italic">Tỉ lệ qua Thẻ cào</p>
+                        <p class="text-3xl font-black text-white tracking-tighter italic">
+                            <i class="fas fa-credit-card text-gold text-xl mr-2"></i>70m / 10k
+                        </p>
+                    </div>
+                </div>
+
+                <a href="https://www.facebook.com/share/1Ht9tuDC5d/" target="_blank" class="w-full py-5 rounded-2xl sky-gradient text-white font-bold text-base tracking-wide flex items-center justify-center gap-3 hover:scale-[1.01] transition-all">
+                    <i class="fab fa-facebook-messenger text-xl"></i> Nhắn tin mua xu qua Facebook
+                </a>
+            </div>
+        </div>
+
+        <!-- ================= MỤC 2: ACC LIÊN QUÂN (#LQ01) ================= -->
+        <div class="glass-card item-card rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl mb-12">
+            <div class="product-img-container cursor-pointer relative" onclick="openFS('https://zpi.cx/b/DWpv7BWnxNnJ.jpg-webp')">
+                <img src="https://zpi.cx/b/DWpv7BWnxNnJ.jpg-webp" alt="Acc Liên Quân VIP" class="product-img">
+                <div class="absolute top-6 left-6 flex flex-col gap-2">
+                    <div class="bg-black/70 backdrop-blur-md px-4 py-1.5 rounded-xl border border-white/10 shadow-lg flex items-center gap-2">
+                        <i class="fas fa-tag text-primary text-[10px]"></i>
+                        <span class="text-xs font-bold text-white">Mã số: #LQ01</span>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white border border-white/30">
+                        <i class="fas fa-expand text-xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
+                    <div>
+                        <h2 class="text-2xl font-bold text-white tracking-tight italic mb-2">Acc Liên Quân Siêu VIP</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[11px] font-bold text-gold bg-gold/10 px-3 py-1 rounded-lg border border-gold/20 italic">2 Skin 3SSS</span>
+                            <span class="text-[11px] font-bold text-primary bg-primary/10 px-3 py-1 rounded-lg border border-primary/20 italic">Nhiều mùa SSM</span>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 px-6 py-4 rounded-3xl border border-white/10 text-center md:text-right min-w-[180px]">
+                        <p class="text-xs text-gray-400 font-bold mb-1 italic">Giá thanh toán</p>
+                        <div class="flex flex-col items-center md:items-end">
+                            <p class="text-2xl font-black text-white tracking-tighter italic flex items-center gap-2">
+                                <i class="fas fa-university text-sky text-sm"></i> 1.000.000đ
+                            </p>
+                            <p class="text-sm font-bold text-gray-500 italic flex items-center gap-2 mt-1">
+                                <i class="fas fa-credit-card text-gold text-[10px]"></i> 1.250.000đ Card
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://www.facebook.com/share/1Ht9tuDC5d/" target="_blank" class="w-full py-5 rounded-2xl bg-white text-black font-bold text-base tracking-wide flex items-center justify-center gap-3 hover:bg-primary hover:text-white transition-all shadow-xl">
+                    <i class="fab fa-facebook-messenger text-xl"></i> Nhắn tin mua qua Facebook
+                </a>
+            </div>
+        </div>
+
+        <!-- ================= MỤC 3: ACC BLOCKMAN GO (#BG01) ================= -->
+        <div class="glass-card item-card rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl mb-12">
+            <div class="product-img-container cursor-pointer relative" onclick="openFS('https://zpi.cx/b/qLsAYvWGcM5w.jpg-webp')">
+                <img src="https://zpi.cx/b/qLsAYvWGcM5w.jpg-webp" alt="Acc Blockman Go VIP 1" class="product-img">
+                <div class="absolute top-6 left-6 flex flex-col gap-2">
+                    <div class="bg-black/70 backdrop-blur-md px-4 py-1.5 rounded-xl border border-white/10 shadow-lg flex items-center gap-2">
+                        <i class="fas fa-tag text-primary text-[10px]"></i>
+                        <span class="text-xs font-bold text-white">Mã số: #BG01</span>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white border border-white/30">
+                        <i class="fas fa-expand text-xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
+                    <div>
+                        <h2 class="text-2xl font-bold text-white tracking-tight italic mb-2">Acc Blockman Go Siêu VIP</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[11px] font-bold text-sky bg-sky/10 px-3 py-1 rounded-lg border border-sky/20 italic">Acc Full Item</span>
+                            <span class="text-[11px] font-bold text-primary bg-primary/10 px-3 py-1 rounded-lg border border-primary/20 italic">Trắng thông tin</span>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 px-6 py-4 rounded-3xl border border-white/10 text-center md:text-right min-w-[200px]">
+                        <p class="text-xs text-gray-400 font-bold mb-1 italic">Giá thanh toán</p>
+                        <div class="flex flex-col items-center md:items-end">
+                            <p class="text-2xl font-black text-white tracking-tighter italic flex items-center gap-2">
+                                <i class="fas fa-university text-sky text-sm"></i> 2.200.000đ
+                            </p>
+                            <p class="text-sm font-bold text-gray-500 italic flex items-center gap-2 mt-1">
+                                <i class="fas fa-credit-card text-gold text-[10px]"></i> 2.650.000đ Card
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://www.facebook.com/share/1Ht9tuDC5d/" target="_blank" class="w-full py-5 rounded-2xl bg-white text-black font-bold text-base tracking-wide flex items-center justify-center gap-3 hover:bg-primary hover:text-white transition-all shadow-xl">
+                    <i class="fab fa-facebook-messenger text-xl"></i> Nhắn tin mua qua Facebook
+                </a>
+            </div>
+        </div>
+
+        <!-- ================= MỤC 4: ACC BLOCKMAN GO (#BG02) ================= -->
+        <div class="glass-card item-card rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl mb-12">
+            <div class="product-img-container cursor-pointer relative" onclick="openFS('https://zpi.cx/b/8yeMK2.jpg-webp')">
+                <img src="https://zpi.cx/b/8yeMK2.jpg-webp" alt="Acc Blockman Go VIP 2" class="product-img">
+                <div class="absolute top-6 left-6 flex flex-col gap-2">
+                    <div class="bg-black/70 backdrop-blur-md px-4 py-1.5 rounded-xl border border-white/10 shadow-lg flex items-center gap-2">
+                        <i class="fas fa-tag text-primary text-[10px]"></i>
+                        <span class="text-xs font-bold text-white">Mã số: #BG02</span>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white border border-white/30">
+                        <i class="fas fa-expand text-xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
+                    <div>
+                        <h2 class="text-2xl font-bold text-white tracking-tight italic mb-2">Acc Blockman Go Siêu VIP</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[11px] font-bold text-sky bg-sky/10 px-3 py-1 rounded-lg border border-sky/20 italic">Acc Full Item</span>
+                            <span class="text-[11px] font-bold text-primary bg-primary/10 px-3 py-1 rounded-lg border border-primary/20 italic">Trắng thông tin</span>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 px-6 py-4 rounded-3xl border border-white/10 text-center md:text-right min-w-[200px]">
+                        <p class="text-xs text-gray-400 font-bold mb-1 italic">Giá thanh toán</p>
+                        <div class="flex flex-col items-center md:items-end">
+                            <p class="text-2xl font-black text-white tracking-tighter italic flex items-center gap-2">
+                                <i class="fas fa-university text-sky text-sm"></i> 2.500.000đ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://www.facebook.com/share/1Ht9tuDC5d/" target="_blank" class="w-full py-5 rounded-2xl bg-white text-black font-bold text-base tracking-wide flex items-center justify-center gap-3 hover:bg-primary hover:text-white transition-all shadow-xl">
+                    <i class="fab fa-facebook-messenger text-xl"></i> Nhắn tin mua qua Facebook
+                </a>
+            </div>
+        </div>
+
+        <!-- ================= MỤC 5: ACC BLOCKMAN GO (#BG03) ================= -->
+        <div class="glass-card item-card rounded-[2.5rem] overflow-hidden border border-white/10 shadow-2xl mb-12">
+            <div class="product-img-container cursor-pointer relative" onclick="openFS('https://zpi.cx/b/rnrPm15.jpg-webp')">
+                <img src="https://zpi.cx/b/rnrPm15.jpg-webp" alt="Acc Blockman Go VIP 3" class="product-img">
+                <div class="absolute top-6 left-6 flex flex-col gap-2">
+                    <div class="bg-black/70 backdrop-blur-md px-4 py-1.5 rounded-xl border border-white/10 shadow-lg flex items-center gap-2">
+                        <i class="fas fa-tag text-primary text-[10px]"></i>
+                        <span class="text-xs font-bold text-white">Mã số: #BG03</span>
+                    </div>
+                </div>
+                <div class="absolute inset-0 bg-black/20 opacity-0 hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <div class="w-14 h-14 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white border border-white/30">
+                        <i class="fas fa-expand text-xl"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-8">
+                <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-8">
+                    <div>
+                        <h2 class="text-2xl font-bold text-white tracking-tight italic mb-2">Acc Blockman Go Siêu VIP</h2>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="text-[11px] font-bold text-sky bg-sky/10 px-3 py-1 rounded-lg border border-sky/20 italic">Acc Full Item</span>
+                            <span class="text-[11px] font-bold text-primary bg-primary/10 px-3 py-1 rounded-lg border border-primary/20 italic">Trắng thông tin</span>
+                        </div>
+                    </div>
+                    <div class="bg-white/5 px-6 py-4 rounded-3xl border border-white/10 text-center md:text-right min-w-[200px]">
+                        <p class="text-xs text-gray-400 font-bold mb-1 italic">Giá thanh toán</p>
+                        <div class="flex flex-col items-center md:items-end">
+                            <!-- Đã cập nhật giá cho #BG03 -->
+                            <p class="text-2xl font-black text-white tracking-tighter italic flex items-center gap-2">
+                                <i class="fas fa-university text-sky text-sm"></i> 150.000đ
+                            </p>
+                            <p class="text-sm font-bold text-gray-500 italic flex items-center gap-2 mt-1">
+                                <i class="fas fa-credit-card text-gold text-[10px]"></i> 200.000đ Card
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://www.facebook.com/share/1Ht9tuDC5d/" target="_blank" class="w-full py-5 rounded-2xl bg-white text-black font-bold text-base tracking-wide flex items-center justify-center gap-3 hover:bg-primary hover:text-white transition-all shadow-xl">
+                    <i class="fab fa-facebook-messenger text-xl"></i> Nhắn tin mua qua Facebook
+                </a>
+            </div>
+        </div>
+
+        <!-- ================= LƯU Ý CHUNG ================= -->
+        <div class="glass-card rounded-[2rem] p-8 space-y-4">
+            <h3 class="text-sm font-bold text-white flex items-center gap-2 uppercase tracking-widest">
+                <i class="fas fa-shield-alt text-primary"></i> Lưu ý dành cho khách hàng
+            </h3>
+            <div class="grid grid-cols-1 gap-3">
+                <div class="note-item p-4 rounded-xl italic">
+                    <p class="text-sm text-gray-300">● <strong>Mua hàng:</strong> Shop không hỗ trợ mua trực tiếp trên web. Vui lòng nhắn tin Admin.</p>
+                </div>
+                <div class="note-item p-4 rounded-xl italic">
+                    <p class="text-sm text-gray-300">● <strong>Bảo hành:</strong> Cam kết bảo hành vĩnh viễn cho mọi tài khoản bán ra.</p>
+                </div>
+                <div class="no
